@@ -1,0 +1,17 @@
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\bin\Debug\net6.0\ArticleBlogSiteDAL.deps.json
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\bin\Debug\net6.0\ArticleBlogSiteDAL.runtimeconfig.json
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\bin\Debug\net6.0\ArticleBlogSiteDAL.dll
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\bin\Debug\net6.0\ArticleBlogSiteDAL.pdb
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\bin\Debug\net6.0\ArticleBlogSiteEntity.dll
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\bin\Debug\net6.0\ArticleBlogSiteEntity.pdb
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\ArticleBlogSiteDAL.csproj.AssemblyReference.cache
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\ArticleBlogSiteDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\ArticleBlogSiteDAL.AssemblyInfoInputs.cache
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\ArticleBlogSiteDAL.AssemblyInfo.cs
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\ArticleBlogSiteDAL.csproj.CoreCompileInputs.cache
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\ArticleBlogSiteDAL.csproj.CopyComplete
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\ArticleBlogSiteDAL.dll
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\refint\ArticleBlogSiteDAL.dll
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\ArticleBlogSiteDAL.pdb
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\ArticleBlogSiteDAL.genruntimeconfig.cache
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteDAL\obj\Debug\net6.0\ref\ArticleBlogSiteDAL.dll

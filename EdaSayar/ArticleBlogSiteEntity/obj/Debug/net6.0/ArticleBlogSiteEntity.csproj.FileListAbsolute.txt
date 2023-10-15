@@ -1,0 +1,12 @@
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\bin\Debug\net6.0\ArticleBlogSiteEntity.deps.json
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\bin\Debug\net6.0\ArticleBlogSiteEntity.dll
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\bin\Debug\net6.0\ArticleBlogSiteEntity.pdb
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\obj\Debug\net6.0\ArticleBlogSiteEntity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\obj\Debug\net6.0\ArticleBlogSiteEntity.AssemblyInfoInputs.cache
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\obj\Debug\net6.0\ArticleBlogSiteEntity.AssemblyInfo.cs
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\obj\Debug\net6.0\ArticleBlogSiteEntity.csproj.CoreCompileInputs.cache
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\obj\Debug\net6.0\ArticleBlogSiteEntity.dll
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\obj\Debug\net6.0\refint\ArticleBlogSiteEntity.dll
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\obj\Debug\net6.0\ArticleBlogSiteEntity.pdb
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\obj\Debug\net6.0\ref\ArticleBlogSiteEntity.dll
+C:\Users\eseda\OneDrive\Masaüstü\MVC\EdaSayar\ArticleBlogSiteEntity\obj\Debug\net6.0\ArticleBlogSiteEntity.csproj.AssemblyReference.cache

@@ -1,0 +1,249 @@
+﻿@model RegisterDTO
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Weblog a Blogging Category Bootstrap responsive WebTemplate | Register :: w3layouts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Weblog a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/single.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+		  rel="stylesheet">
+</head>
+
+<body>
+	<!--Header-->
+
+	<header>
+		
+
+		<div class="top-bar_sub_w3layouts container-fluid">
+			<div class="row">
+				<div class="col-md-4 logo text-left">
+					<a class="navbar-brand" href="index.html">
+						<i class="fab fa-linode"></i> BİLGİATLASI
+					</a>
+				</div>
+				<div class="col-md-4 top-forms text-center mt-lg-3 mt-md-1 mt-0">
+					<span>Hoşgeldin!</span>
+					<span class="mx-lg-4 mx-md-2  mx-1">
+						<a href="login.html">
+							<i class="fas fa-lock"></i> Giriş Yap
+						</a>
+					</span>
+					<span>
+						<a href="register.html">
+							<i class="far fa-user"></i> Kayıt Ol
+						</a>
+					</span>
+				</div>
+
+			</div>
+		</div>
+		
+
+		<div class="header_top" id="home">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<button class="navbar-toggler navbar-toggler-right mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								Anasayfa
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">Hakkımızda</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+							   aria-expanded="false">
+								Kategoriler
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#"></a>
+								<a class="dropdown-item" href="blog1.html">Teknoloji</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="blog2.html">Felsefe</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="blog3.html">Tarih</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="blog3.html">Psikoloji</a>
+
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">İletişim</a>
+						</li>
+
+
+					</ul>
+					<form action="#" method="post" class="form-inline my-2 my-lg-0 header-search">
+						<input class="form-control mr-sm-2" type="search" placeholder="Ara..." name="Search" required="">
+						<button class="btn btn1 my-2 my-sm-0" type="submit">
+							<i class="fas fa-search"></i>
+						</button>
+					</form>
+					
+
+				</div>
+			</nav>
+
+		</div>
+	</header>
+	<!--//header-->
+	<!--/banner-->
+	
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item">
+			<a href="index.html">Anasayfa</a>
+		</li>
+		<li class="breadcrumb-item active">Kayıt Ol</li>
+	</ol>
+	<!--//banner-->
+	<!--/main-->
+	<section class="main-content-w3layouts-agileits">
+		<div class="container">
+			<h3 class="tittle">Şimdi kayıt ol!</h3>
+			<div class="inner-sec">
+				<div class="login p-5 bg-light mx-auto mw-100">
+					<form action="#" method="post">
+						<div class="form-row">
+							
+							<div class="col-md-6 mb-3">
+								<label for="txtUsername">Ad:</label>
+								<input type="text" class="form-control" asp-for="@Model.FirstName">
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="txtUsername">Soyad:</label>
+								<input type="text" class="form-control" asp-for="@Model.LastName">
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="txtUsername">Kullanıcı Adı:</label>
+								<input type="text" class="form-control" asp-for="@Model.UserName">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="txtEmail">E-posta:</label>
+								<input type="email" class="form-control" asp-for="@Model.Email" required="">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="txtPassword">Şifre:</label>
+								<input type="password" class="form-control" asp-for="@Model.Password" required="">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="txtPassword">Şifre Tekrar:</label>
+								<input type="password" class="form-control" asp-for="@Model.ConfirmPassword">
+							</div>
+							
+
+						</div>
+						<button type="submit" class="btn btn-primary submit mb-4">Kayıt Ol</button>
+						<p>
+							<a href="/Admin/Auth/Login/">Zaten Bir Hesabınız Var mı?</a>
+						</p>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//main-->
+	<!--footer-->
+	
+	<!---->
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- password-script -->
+	<script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Şifreler eşleşmiyor!");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+	<!-- //password-script -->
+	<!--/ start-smoth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!--// end-smoth-scrolling -->
+
+	<script>
+		$(document).ready(function () {
+			/*
+									var defaults = {
+											containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear'
+										};
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<a href="#home" class="scroll" id="toTop" style="display: block;">
+		<span id="toTopHover" style="opacity: 1;"> </span>
+	</a>
+
+	<!-- //Custom-JavaScript-File-Links -->
+	<script src="js/bootstrap.js"></script>
+	<link href="~/css/bootstrap.css" rel="stylesheet" />
+	<link href="~/css/contact.css" rel="stylesheet" />
+	<link href="~/css/fontawesome-all.css" rel="stylesheet" />
+	<link href="~/css/jquery.desoslide.css" rel="stylesheet" />
+	<link href="~/css/single.css" rel="stylesheet" />
+	<link href="~/css/style.css" rel="stylesheet" />
+</body>
+
+</html>
+

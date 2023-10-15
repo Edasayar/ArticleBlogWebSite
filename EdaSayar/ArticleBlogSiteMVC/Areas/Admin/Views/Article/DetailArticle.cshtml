@@ -1,0 +1,51 @@
+﻿@model List<ArticleDTO>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body {
+            /*  background-image: url("ArkaPlan/1600w-1iOEJNrdkZc.webp"); */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+
+</head>
+<body>
+
+    <ul class="">
+        @foreach (var item in Model)
+        {
+
+            <div class="bxs-credit-card-front">
+
+                <div class="card" style="width: 36rem;">
+                    <h6>
+                        <figcaption class="figure-caption-initialism text-black-50">Tür: e Yayınlayan: @item.CreatedBy &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp @item.CreatedDate  </figcaption>
+                    </h6>
+                    <img src="@item.Image" class="card-img-top" alt="@item.Image">
+                    <div class="card-body">
+                        <h1 class="card-title">@item.Content</h1>
+                        <h6 class="card-title">@item.ViewCount</h6>
+                        
+                        <p class="card-text">@item.Category.CategoryType</p>
+                        <a asp-action="DetailArticle" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+
+            </div>
+        }
+    </ul>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+﻿@model ArticleAddDTO
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Oluşturma Formu</title>
+
+</head>
+<body>
+    <div class="form-container">
+        <h1>Sen de Yaz!</h1>
+        <section>
+            <form class="row" enctype="multipart/form-data" method="POST">
+                <div class="mb-3">
+                    <label for="validationCustom04" class="form-label text-danger fw-bold">Ürünün Kategorisi:</label>
+                    <select asp-for="Categories" class="form-select border border-warning border-3 rounded text-danger" id="validationCustom04" required>
+                        <option selected>Felsefe</option>
+                        <option value="1">Tarih</option>
+                        <option value="2">Teknoloji</option>
+                        <option value="3">Psikoloji</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Title" class="form-label"> Başlık </label>
+                    <textarea asp-for="@Model.Content" class="form-control" rows="3"></textarea>
+                </div>
+                <input type="hidden" asp-for="@Model.Categories" />
+
+
+                <div>
+                    <input type="file" asp-for="@Model.Image" accept="image/" />
+                    <label asp-for="@Model.Image" class="form-label"> Yeni Resim </label>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-primary" value="Oluştur" />
+                </div>
+
+                @Html.ValidationSummary()
+
+            </form>
+        </section>
+    </div>
+</body>
+</html>

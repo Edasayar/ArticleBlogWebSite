@@ -1,0 +1,482 @@
+﻿@model List<ArticleDTO>
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Weblog a Blogging Category Bootstrap responsive WebTemplate | Home :: w3layouts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Weblog a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/jquery.desoslide.css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+
+<body>
+	<!--Header-->
+	@RenderBody()
+	<header>
+		<div class="top-bar_sub_w3layouts container-fluid">
+			<div class="row">
+				<div class="col-md-4 logo text-left">
+					<a class="navbar-brand" asp-area="Admin" asp-controller="Article" asp-action="Index">
+						<i class="fa-solid fa-book-atlas fa-2xl"></i> BilgiAtlası
+					</a>
+				</div>
+				<div class="col-md-4 top-forms text-center mt-lg-3 mt-md-1 mt-0">
+					<span>Hoşgeldin!</span>
+					<span class="mx-lg-4 mx-md-2  mx-1">
+						<a asp-area="Admin" asp-controller="Auth" asp-action="Login"> <i class="fas fa-lock"></i>Giriş Yap</a>
+					</span>
+					<span>
+						<a asp-area="Admin" asp-controller="Register" asp-action="Index"> <i class="far fa-user"></i> Kayıt Ol</a>
+					</span>
+					<span>
+						<a asp-area="Admin" asp-controller="Auth" asp-action="Lagout"> <i class="far fa-user"></i> Çıkış Yap</a>
+					</span>
+					
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="header_top" id="home">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<button class="navbar-toggler navbar-toggler-right mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">
+								Anasayfa
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">Hakkımızda</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">İletişim</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Kategoriler
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#"></a>
+								<a class="dropdown-item" href="blog1.html">Teknoloji</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="blog2.html">Felsefe</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="blog3.html">Tarih</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="blog3.html">Psikoloji</a>
+
+							</div>
+						</li>
+						
+
+					</ul>
+					<form action="#" method="post" class="form-inline my-2 my-lg-0 header-search">
+						<input class="form-control mr-sm-2" type="search" placeholder="Ara..." name="Search" required="">
+						<button class="btn btn1 my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+					</form>
+
+
+
+				</div>
+			</nav>
+
+		</div>
+	</header>
+	<!--//header-->
+	<!--/banner-->
+	<div class="banner">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
+			</ol>
+			
+			<div class="carousel-inner" role="listbox">
+
+				@foreach (var article in Model)
+				{
+					<div class="carousel-item">
+						<div class="carousel-caption">
+							<img src="@article.Image" class="card-img-top" alt="@article.Image">
+							<h4>
+								@article.Title
+								
+							</h4>
+							<div class="read">
+								<a asp-action="Index" asp-controller="Article" asp-area="Admin" class="btn btn-primary read-m">Daha Fazla</a>
+							</div>
+							
+							
+						</div>
+						
+					</div>
+				}
+				<style>
+					.carousel-item img {
+						max-width: 100%; /* Resmi Carousel genişliği kadar sınırla */
+						height: contain; /* Otomatik yükseklik ayarı, oranları korur */
+						margin: 0 auto; /* Resmi yatayda ortala */
+						display: block; /* Resmi blok element olarak görüntüle */
+					}
+				</style>
+
+				
+				
+				<div class="carousel-item item4 active">
+					<img src="/images/en-iyi-blog-siteleri-1.webp" class="card-img-top" alt="...">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<!--/model-->
+	<!--//banner-->
+
+	<!--/main-->
+	<section class="main-content-w3layouts-agileits">
+		<div class="container">
+			<div class="row">
+				<!--left-->
+				<div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
+					@foreach (var article in Model)
+					{
+						<div class="blog-grid-top">
+							<div class="b-grid-top">
+								<div class="blog_info_left_grid">
+									<a href="single.html">
+										<img src="images/8.jpg" class="img-fluid" alt="">
+									</a>
+								</div>
+								<div class="blog-info-middle">
+									<ul>
+										<li>
+											<a href="#">
+												<i class="far fa-calendar-alt"></i> @article.CreatedDate
+											</a>
+										</li>
+										@* <li class="mx-2">
+											<a href="#">
+												<i class="far fa-thumbs-up"></i> @article.Rating
+											</a>
+										</li> *@
+										<li>
+											<a href="#">
+												<i class="far fa-comment"></i> @article.Comment
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+
+							<!-- Yıldızları burada oluşturun -->
+							<div class="star-rating">
+								@for (int i = 1; i <= 5; i++)
+								{
+									<i class="fas fa-star @(i <= (int)article.Rating ? "filled" : "empty")"></i>
+								}
+							</div>
+							<!-- Yıldızları burada oluşturun -->
+
+							<h3>
+								<a href="single.html">@article.Title</a>
+							</h3>
+							@* <p>
+								@article.Content
+							</p> *@
+							<a href="single.html" class="btn btn-primary read-m">Daha fazla</a>
+						</div>
+					}
+
+
+					<!--//silder-->
+					<div class="blog-girds-sec">
+						<div class="row">
+							<div class="col-md-6 blog-grid-top">
+								<div class="b-grid-top">
+									<div class="blog_info_left_grid">
+										<a href="single.html">
+											<img src="images/b2.jpg" class="img-fluid" alt="">
+										</a>
+									</div>
+									<h3>
+										<a href="single.html">Amet consectetur </a>
+									</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt aliqua uta enim.</p>
+								</div>
+								<ul class="blog-icons">
+									<li>
+										<a href="#">
+											<i class="far fa-clock"></i> 5 Monts
+										</a>
+									</li>
+									<li class="mx-2">
+										<a href="#">
+											<i class="far fa-comment"></i> 21
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-eye"></i> 2000
+										</a>
+									</li>
+
+								</ul>
+							</div>
+							<div class="col-md-6 blog-grid-top">
+								<div class="b-grid-top">
+									<div class="blog_info_left_grid">
+										<a href="single.html">
+											<img src="images/b3.jpg" class="img-fluid" alt="">
+										</a>
+									</div>
+									<h3>
+										<a href="single.html">Amet adipisicing </a>
+									</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt aliqua uta enim.</p>
+
+								</div>
+								<ul class="blog-icons">
+									<li>
+										<a href="#">
+											<i class="far fa-clock"></i> 5 Monts
+										</a>
+									</li>
+									<li class="mx-2">
+										<a href="#">
+											<i class="far fa-comment"></i> 21
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-eye"></i> 2000
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--//left-->
+				<!--right-->
+				<aside class="col-lg-4 agileits-w3ls-right-blog-con text-right">
+					
+						<div class="tech-btm">
+							<h4>En Son Eklenenler</h4>
+						@foreach (var article in Model)
+						{
+							<div class="blog-grids row mb-3">
+								<div class="col-md-5 blog-grid-left">
+									<a href="single.html">
+										<img src="@article.Image" class="img-fluid" alt="">
+									</a>
+								</div>
+								<div class="col-md-7 blog-grid-right">
+									<h5>
+										<a href="single.html">@article.Title</a>
+									</h5>
+									<div class="sub-meta">
+										<span>
+											<i class="far fa-clock"></i> @article.CreatedDate
+										</span>
+									</div>
+								</div>
+							</div>
+						}
+						
+
+							</div>
+							
+						</div>
+					</div>
+
+				</aside>
+				<!--//right-->
+			</div>
+		</div>
+	</section>
+	<!--//main-->
+	
+
+	<!--//main-->
+	
+	
+	<!---->
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- desoslide-JavaScript -->
+	<script src="js/jquery.desoslide.js"></script>
+	<script>
+		$('#demo1_thumbs').desoSlide({
+			main: {
+				container: '#demo1_main_image',
+				cssClass: 'img-responsive'
+			},
+			effect: 'sideFade',
+			caption: true
+		});
+	</script>
+
+	<!-- requried-jsfiles-for owl -->
+	<script>
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 3
+					}
+				}
+			});
+
+		});
+	</script>
+	<script>
+		$(window).load(function () {
+			$("#flexiselDemo2").flexisel({
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 3
+					}
+				}
+			});
+
+		});
+	</script>
+	<script src="js/jquery.flexisel.js"></script>
+	<!-- //password-script -->
+	<!--/ start-smoth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!--// end-smoth-scrolling -->
+
+	<script>
+		$(document).ready(function () {
+
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<a href="#home" class="scroll" id="toTop" style="display: none;">
+		<span id="toTopHover"></span>
+		<span id="toTopHover" style="opacity: 1;"> </span>
+	</a>
+	<style>
+		/* Yeşil yıldızlar için */
+		.star-rating .fas.fa-star.filled {
+			color: green;
+		}
+
+		/* Boş yıldızlar için */
+		.star-rating .fas.fa-star.empty {
+			color: gray; /* Boş yıldızların rengini gri olarak ayarladık, istediğiniz rengi kullanabilirsiniz. */
+		}
+
+	</style>
+	<!-- //Custom-JavaScript-File-Links -->
+	<script src="js/bootstrap.js"></script>
+
+
+
+
+	<a href="#" id="toTop">To Top</a>
+	<img src="file:///C:/Users/eseda/OneDrive/Masa%C3%BCst%C3%BC/Kar%C4%B1%C5%9F%C4%B1k/web/images/m1.jpg" alt="" style="display: none;">
+	<img src="file:///C:/Users/eseda/OneDrive/Masa%C3%BCst%C3%BC/Kar%C4%B1%C5%9F%C4%B1k/web/images/m2.jpg" alt="" style="display: none;">
+	<img src="file:///C:/Users/eseda/OneDrive/Masa%C3%BCst%C3%BC/Kar%C4%B1%C5%9F%C4%B1k/web/images/m3.jpg" alt="" style="display: none;">
+	<img src="file:///C:/Users/eseda/OneDrive/Masa%C3%BCst%C3%BC/Kar%C4%B1%C5%9F%C4%B1k/web/images/m4.jpg" alt="" style="display: none;">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

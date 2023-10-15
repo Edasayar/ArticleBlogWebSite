@@ -1,0 +1,21 @@
+﻿@model List<ArticleDTO>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>En Son Eklenen Makaleler</title>
+</head>
+<body>
+    <h1>En Son Eklenen Makaleler</h1>
+    <ul>
+        @foreach (var article in Model)
+        {
+            <li>
+                <h2>@article.Title</h2>
+                <h5>@article.Content</h5>
+              
+            </li>
+        }
+    </ul>
+</body>
+</html>

@@ -1,0 +1,310 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteService\\ArticleBlogSiteService.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteCore\\ArticleBlogSiteCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteCore\\ArticleBlogSiteCore.csproj",
+        "projectName": "ArticleBlogSiteCore",
+        "projectPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteCore\\ArticleBlogSiteCore.csproj",
+        "packagesPath": "C:\\Users\\eseda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\eseda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteDAL\\ArticleBlogSiteDAL.csproj": {
+                "projectPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteDAL\\ArticleBlogSiteDAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteDAL\\ArticleBlogSiteDAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteDAL\\ArticleBlogSiteDAL.csproj",
+        "projectName": "ArticleBlogSiteDAL",
+        "projectPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteDAL\\ArticleBlogSiteDAL.csproj",
+        "packagesPath": "C:\\Users\\eseda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteDAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\eseda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteEntity\\ArticleBlogSiteEntity.csproj": {
+                "projectPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteEntity\\ArticleBlogSiteEntity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteEntity\\ArticleBlogSiteEntity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteEntity\\ArticleBlogSiteEntity.csproj",
+        "projectName": "ArticleBlogSiteEntity",
+        "projectPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteEntity\\ArticleBlogSiteEntity.csproj",
+        "packagesPath": "C:\\Users\\eseda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteEntity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\eseda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteService\\ArticleBlogSiteService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteService\\ArticleBlogSiteService.csproj",
+        "projectName": "ArticleBlogSiteService",
+        "projectPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteService\\ArticleBlogSiteService.csproj",
+        "packagesPath": "C:\\Users\\eseda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\eseda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteCore\\ArticleBlogSiteCore.csproj": {
+                "projectPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteCore\\ArticleBlogSiteCore.csproj"
+              },
+              "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteDAL\\ArticleBlogSiteDAL.csproj": {
+                "projectPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteDAL\\ArticleBlogSiteDAL.csproj"
+              },
+              "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteEntity\\ArticleBlogSiteEntity.csproj": {
+                "projectPath": "C:\\Users\\eseda\\OneDrive\\Masaüstü\\MVC\\EdaSayar\\ArticleBlogSiteEntity\\ArticleBlogSiteEntity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.ServiceFabric.Data.Extensions": {
+              "target": "Package",
+              "version": "[6.1.1851, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
